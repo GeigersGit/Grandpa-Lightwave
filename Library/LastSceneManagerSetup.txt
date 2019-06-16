@@ -1,0 +1,4 @@
+sceneSetups:
+- path: D:/Media/Projects/Unity/Android Game Prototype/Assets/Scenes/Main.unity
+  isLoaded: 1
+  isActive: 1
