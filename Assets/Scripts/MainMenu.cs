@@ -11,6 +11,7 @@ public class MainMenu : MonoBehaviour {
 	public bool isExitButton = false;
 	public bool isMainMenuButton = false;
 	public bool isplayagainbutton = false;
+	public GameObject creditsPrefab;
 	bool hover = false;
 
 	// Use this for initialization
@@ -20,6 +21,18 @@ public class MainMenu : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+		if (Input.GetKeyDown (KeyCode.Return)) {
+			Application.LoadLevel (1);
+			env = GameObject.Find ("Environment");
+			env.transform.position = startpos;
+		}
+
+		if (Input.GetKeyDown (KeyCode.Escape)) {
+			Application.Quit ();
+		}
+
+
 		if (hover) {
 			if (Input.GetMouseButtonDown (0)) {
 				
@@ -29,7 +42,7 @@ public class MainMenu : MonoBehaviour {
 					env.transform.position = startpos;
 				}
 				if (isCreditsButton)
-					Application.LoadLevel (2);
+					Instantiate(creditsPrefab, new Vector3(-30, 133, -3851), Quaternion.identity);
 				if (isExitButton)
 					Application.Quit ();
 				if (isMainMenuButton)

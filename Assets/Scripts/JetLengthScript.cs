@@ -10,22 +10,22 @@ public class JetLengthScript : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        PS =  GetComponent<ParticleSystem>();
+        //PS =  GetComponent<ParticleSystem>();
 
         
 
-        player = GameObject.FindGameObjectWithTag("Finish");
-        rb = player.GetComponent<Rigidbody>();
+        //player = GameObject.FindGameObjectWithTag("Finish");
+        //rb = player.GetComponent<Rigidbody>();
 
         //emission = PS.emission;
         //emission.enabled = true;
 
-        PS.startSpeed = 40;
+        //PS.startSpeed = 40;
     }
 	
 	// Update is called once per frame
 	void Update () {
-        if (PS.startSpeed < 150)
-        PS.startSpeed = 40 + (rb.velocity.magnitude/60);
+        //if (PS.startSpeed < 150)
+        //PS.startSpeed = 40 + (rb.velocity.magnitude/60);
     }
 }

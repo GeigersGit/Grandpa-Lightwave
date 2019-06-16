@@ -11,7 +11,7 @@ public class BusScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z - 25f);
+		transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z - (2500f * Time.deltaTime));
 
         if (transform.position.z < -100)
         {

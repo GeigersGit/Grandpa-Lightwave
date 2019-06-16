@@ -15,20 +15,20 @@ public class VolumeTextureScript : MonoBehaviour {
 	public float volume = 0;
 	// Use this for initialization
 	void Start () {
+		visualizer = GameObject.Find ("Music Analyzer");
 		targetscript = visualizer.GetComponent<Circle64>();
-
-		//render = GetComponent<Renderer> ();
-		//mat = render.material;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		if (!targetscript) {
+			visualizer = GameObject.Find ("Music Analyzer");
+			targetscript = visualizer.GetComponent<Circle64>();
+		}
 		volume = targetscript.averagevol;
 		//DynamicGI.SetEmissive (GetComponent<Renderer>(), new Color (volume*10f, volume*10f, volume*10f, volume*10f));
 
 		mat.SetColor ("_EmissionColor", new Color (volume* scaler, volume* scaler, volume* scaler));
-        //mat2.SetColor("_EmissionColor", new Color(volume * scaler, volume * scaler, volume * scaler));
-        //mat3.SetColor("_EmissionColor", new Color(volume * scaler, volume * scaler, volume * scaler));
 
     }
 }

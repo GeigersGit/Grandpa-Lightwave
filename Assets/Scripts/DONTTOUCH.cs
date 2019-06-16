@@ -20,9 +20,6 @@ public class DONTTOUCH : MonoBehaviour {
 			Destroy (col.gameObject);
 			Instantiate (explosion, position, rotation);
 
-			//Wait ();
-
-			Application.LoadLevel (3);
 		}
 
 	}
@@ -32,7 +29,7 @@ public class DONTTOUCH : MonoBehaviour {
 	}
 
 	IEnumerator Wait(){
-		yield return new WaitForSeconds (3);
+		yield return new WaitForSeconds (1);
 	}
 
 }

@@ -1,0 +1,19 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerControl.cs">
+    <Files>
+      <File FileName="Assets\Scripts\VolumeTextureScript.cs" Line="26" Column="11" />
+      <File FileName="Assets\Scripts\PlayerControl.cs" Line="11" Column="2" />
+      <File FileName="Assets\Scripts\MainMenu.cs" Line="34" Column="1" />
+      <File FileName="Assets\Scripts\ManagerScript.cs" Line="13" Column="32" />
+      <File FileName="Assets\Scripts\BusScript.cs" Line="14" Column="108" />
+      <File FileName="Assets\Scripts\TextScroll.cs" Line="16" Column="33" />
+      <File FileName="Assets\Scripts\DONTTOUCH.cs" Line="22" Column="1" />
+      <File FileName="Assets\Scripts\AirbrakeScript.cs" Line="38" Column="47" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
